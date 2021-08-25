@@ -1,0 +1,279 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:{first_name} {last_name} - {ndis_no}",
+ "creation": "2021-02-11 15:19:04.644649",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "first_name",
+  "last_name",
+  "full_name",
+  "gender",
+  "email",
+  "primary_contact_number",
+  "phone_number",
+  "ndis_no",
+  "street_number",
+  "area",
+  "state",
+  "postcode",
+  "service_region",
+  "date_of_birth",
+  "section_break_14",
+  "core_supports",
+  "support_coordination",
+  "column_break_17",
+  "plan_management",
+  "allied_health_support"
+ ],
+ "fields": [
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale\nOther"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "primary_contact_number",
+   "fieldtype": "Data",
+   "label": "Primary Contact Number",
+   "length": 10
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Secondary Contact Number",
+   "length": 10
+  },
+  {
+   "fieldname": "ndis_no",
+   "fieldtype": "Data",
+   "label": "NDIS Number",
+   "length": 9
+  },
+  {
+   "fieldname": "street_number",
+   "fieldtype": "Data",
+   "label": "Street Number & Name"
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Data",
+   "label": "Suburb"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fieldname": "postcode",
+   "fieldtype": "Data",
+   "label": "Post Code",
+   "length": 4
+  },
+  {
+   "default": "NA",
+   "fieldname": "service_region",
+   "fieldtype": "Select",
+   "label": "Service Region",
+   "options": "NA\nNorth\nSouth\nEast\nWest",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date Of Birth"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "core_supports",
+   "fieldtype": "Check",
+   "label": "Core Supports"
+  },
+  {
+   "default": "0",
+   "fieldname": "support_coordination",
+   "fieldtype": "Check",
+   "label": "Support Coordination"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "plan_management",
+   "fieldtype": "Check",
+   "label": "Plan Management"
+  },
+  {
+   "default": "0",
+   "fieldname": "allied_health_support",
+   "fieldtype": "Check",
+   "label": "Allied Health Support"
+  }
+ ],
+ "links": [
+  {
+   "group": "Manage Participants",
+   "link_doctype": "Assessment Form",
+   "link_fieldname": "participant"
+  },
+  {
+   "group": "Manage Participants",
+   "link_doctype": "Relationship",
+   "link_fieldname": "participant"
+  },
+  {
+   "group": "Manage Participants",
+   "link_doctype": "Support Plan",
+   "link_fieldname": "participant"
+  },
+  {
+   "group": "Manage Participants",
+   "link_doctype": "Person Centered Plan",
+   "link_fieldname": "participant"
+  },
+  {
+   "group": "Manage Participants",
+   "link_doctype": "Participant Service Agreement",
+   "link_fieldname": "participant"
+  },
+  {
+   "group": "Consent Forms",
+   "link_doctype": "Adult Participant Guardian Nomination Consent Form",
+   "link_fieldname": "participant"
+  },
+  {
+   "group": "Consent Forms",
+   "link_doctype": "Participant Acknowledgement Form",
+   "link_fieldname": "participant"
+  },
+  {
+   "group": "Consent Forms",
+   "link_doctype": "Participant Privacy Consent Form",
+   "link_fieldname": "participant"
+  },
+  {
+   "group": "Feedback Forms",
+   "link_doctype": "Initial Feedback Form",
+   "link_fieldname": "participant"
+  },
+  {
+   "group": "Feedback Forms",
+   "link_doctype": "Monthly Feedback Form",
+   "link_fieldname": "participant"
+  },
+  {
+   "group": "Feedback Forms",
+   "link_doctype": "Annual Feedback Form",
+   "link_fieldname": "participant"
+  },
+  {
+   "group": "Feedback Forms",
+   "link_doctype": "Feedback Form",
+   "link_fieldname": "participant"
+  },
+  {
+   "group": "Documents",
+   "link_doctype": "NDIS Plan",
+   "link_fieldname": "participant"
+  },
+  {
+   "group": "Documents",
+   "link_doctype": "MISC Document",
+   "link_fieldname": "participant"
+  },
+  {
+   "group": "Documents",
+   "link_doctype": "Participant Support Review",
+   "link_fieldname": "participant"
+  },
+  {
+   "group": "Documents",
+   "link_doctype": "Participant Induction Handbook",
+   "link_fieldname": "participant"
+  },
+  {
+   "group": "Risks",
+   "link_doctype": "ERM Plan",
+   "link_fieldname": "participant"
+  },
+  {
+   "group": "Risks",
+   "link_doctype": "RMC Model",
+   "link_fieldname": "participant"
+  },
+  {
+   "group": "Risks",
+   "link_doctype": "Risk Register",
+   "link_fieldname": "participant"
+  }
+ ],
+ "modified": "2021-08-24 13:35:36.424393",
+ "modified_by": "Administrator",
+ "module": "Core",
+ "name": "Participant",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "G1 Admin",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

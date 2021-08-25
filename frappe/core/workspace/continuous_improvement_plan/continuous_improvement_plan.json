@@ -1,0 +1,38 @@
+{
+ "category": "Modules",
+ "charts": [],
+ "creation": "2021-07-05 19:28:17.328962",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "extends_another_page": 0,
+ "hide_custom": 1,
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "label": "Continuous Improvement Plan",
+ "links": [],
+ "modified": "2021-07-05 19:28:47.485625",
+ "modified_by": "Administrator",
+ "module": "Core",
+ "name": "Continuous Improvement Plan",
+ "owner": "Administrator",
+ "pin_to_bottom": 0,
+ "pin_to_top": 0,
+ "shortcuts": [
+  {
+   "doc_view": "List",
+   "label": "All Continuous Improvement Plans",
+   "link_to": "CIP",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "New",
+   "label": "New Continuous Improvement Plan",
+   "link_to": "CIP",
+   "type": "DocType"
+  }
+ ],
+ "shortcuts_label": "CIP"
+}
